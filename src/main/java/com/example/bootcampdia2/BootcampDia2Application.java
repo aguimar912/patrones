@@ -4,6 +4,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import singleton.PersonaSingleton;
+
 @SpringBootApplication
 public class BootcampDia2Application implements CommandLineRunner{
 
@@ -13,7 +15,10 @@ public class BootcampDia2Application implements CommandLineRunner{
 	
 	@Override
 	public void run(String... arg) throws Exception {
-		//System.out.print("hola");
+		PersonaSingleton pS = new PersonaSingleton();
+		pS.setName("Andrea");
+		pS.setAge(24);
+		pS.singletonOperation();
 	}
 
 }

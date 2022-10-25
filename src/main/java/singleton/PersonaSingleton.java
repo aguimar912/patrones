@@ -8,7 +8,7 @@ public class PersonaSingleton {
 	
 	private int age;
 	
-	private PersonaSingleton() {
+	public PersonaSingleton() {
 		
 	}
 	
@@ -23,4 +23,34 @@ public class PersonaSingleton {
 	public void singletonOperation() {
 		System.out.println("Mi nombre es " + name + " y mi edad es " + age);
 	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * @return the age
+	 */
+	public int getAge() {
+		return age;
+	}
+
+	/**
+	 * @param age the age to set
+	 */
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	
 }
